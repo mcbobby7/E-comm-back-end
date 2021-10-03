@@ -1,5 +1,6 @@
 import asyncHandler from "express-async-handler";
 import Product from "../models/productModel.js";
+import Category from "../models/categoryModel.js";
 
 // @desc    Fetch all products
 // @route   GET /api/products
@@ -58,13 +59,15 @@ const deleteProduct = asyncHandler(async (req, res) => {
 // @route   POST /api/products
 // @access  Private/Admin
 const createProduct = asyncHandler(async (req, res) => {
+  const { name, price, description, image, brand, category, countInStock } =
+    req.body;
   const product = new Product({
     name: "Sample name",
     price: 0,
     user: req.user._id,
     image: "/images/sample.jpg",
     brand: "Sample brand",
-    category: "Sample category",
+    category: "Electronics",
     countInStock: 0,
     numReviews: 0,
     description: "Sample description",
@@ -150,6 +153,52 @@ const getTopProducts = asyncHandler(async (req, res) => {
   res.json(products);
 });
 
+const getProductsByCartegory = asyncHandler(async (req, res) => {
+  let products;
+  if (req.params.cat == "Top") {
+    products = await Product.find({}).sort({ rating: -1 }).limit(30);
+  } else if (req.params.cat == "Latest") {
+    products = await Product.find({}).sort({ createdAt: -1 }).limit(30);
+  } else {
+    products = await Product.find({ category: req.params.cat }).limit(30);
+  }
+
+  res.json({
+    hasError: false,
+    products,
+    message: "prouducts found",
+  });
+});
+
+const getCategories = asyncHandler(async (req, res) => {
+  const categories = await Category.find({});
+
+  res.json({
+    hasError: false,
+    categories: categories,
+  });
+});
+
+const postCategories = asyncHandler(async (req, res) => {
+  const category = new Category({
+    name: req.body.name,
+  });
+
+  const createdCatgory = await category.save();
+  if (createdCatgory) {
+    res.json({
+      hasError: false,
+      message: "category created successfully",
+      createdCatgory,
+    });
+  } else {
+    res.json({
+      hasError: true,
+      message: "Error try again",
+    });
+  }
+});
+
 export {
   getProducts,
   getProductById,
@@ -158,4 +207,7 @@ export {
   updateProduct,
   createProductReview,
   getTopProducts,
+  getCategories,
+  postCategories,
+  getProductsByCartegory,
 };

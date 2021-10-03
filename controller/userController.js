@@ -322,7 +322,7 @@ const forgotPasswordTemplate = (token) => {
                         </tr>
                         <tr>
                             <td style="text-align:center;">
-                              <a style="text-decoration: none" href="https://rakeshmandal.com" title="logo" target="_blank">
+                              <a style="text-decoration: none" href="http://mcbee.herokuapp.com" title="logo" target="_blank">
                               <p style="font-size: 40px; font-weight: 600; color: #3A8BCD;">MCBEE</p>
                               </a>
                             </td>
