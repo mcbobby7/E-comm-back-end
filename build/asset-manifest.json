@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.837b6924.chunk.css",
-    "main.js": "/static/js/main.c251f264.chunk.js",
-    "main.js.map": "/static/js/main.c251f264.chunk.js.map",
+    "main.js": "/static/js/main.f1b56bb8.chunk.js",
+    "main.js.map": "/static/js/main.f1b56bb8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a54c6ea9.js",
     "runtime-main.js.map": "/static/js/runtime-main.a54c6ea9.js.map",
     "static/css/2.21158041.chunk.css": "/static/css/2.21158041.chunk.css",
     "static/js/2.9f902bef.chunk.js": "/static/js/2.9f902bef.chunk.js",
     "static/js/2.9f902bef.chunk.js.map": "/static/js/2.9f902bef.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8eedc8ac3f9fc51359a5f5040b7a0e02.js": "/precache-manifest.8eedc8ac3f9fc51359a5f5040b7a0e02.js",
+    "precache-manifest.3e4d3f39bd0182b7849aaeb30f3cc105.js": "/precache-manifest.3e4d3f39bd0182b7849aaeb30f3cc105.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.21158041.chunk.css.map": "/static/css/2.21158041.chunk.css.map",
     "static/css/main.837b6924.chunk.css.map": "/static/css/main.837b6924.chunk.css.map",
     "static/js/2.9f902bef.chunk.js.LICENSE.txt": "/static/js/2.9f902bef.chunk.js.LICENSE.txt",
     "static/media/style.css": "/static/media/1.ee0c4138.png",
     "static/media/tooplate-main.css": "/static/media/banner-bg.2f3a42c0.jpg",
-    "static/media/banner5.jpg": "/static/media/banner5.7d6368d4.jpg",
+    "static/media/banner10.jpg": "/static/media/banner10.20567510.jpg",
+    "static/media/banner12.jpg": "/static/media/banner12.a69dd3a5.jpg",
     "static/media/banner7.jpg": "/static/media/banner7.849335a3.jpg",
     "static/media/banner8.jpg": "/static/media/banner8.4f475849.jpg",
-    "static/media/banner9.png": "/static/media/banner9.d3accbfd.png",
     "static/media/error.gif": "/static/media/error.5231214d.gif",
     "static/media/error2.svg": "/static/media/error2.4d768680.svg",
     "static/media/fontawesome.css": "/static/media/fontawesome-webfont.f7c2b4b7.eot",
@@ -33,6 +33,6 @@
     "static/css/2.21158041.chunk.css",
     "static/js/2.9f902bef.chunk.js",
     "static/css/main.837b6924.chunk.css",
-    "static/js/main.c251f264.chunk.js"
+    "static/js/main.f1b56bb8.chunk.js"
   ]
 }
