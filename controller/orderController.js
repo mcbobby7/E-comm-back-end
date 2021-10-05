@@ -59,13 +59,17 @@ const addOrderItems = asyncHandler(async (req, res) => {
             `                       
             <tr>
               <td style="padding: 10px">${item.name}</td>
-              <td style="padding: 10px">${item.price}</td>
+              <td style="padding: 10px">&#8358;${item.price.toLocaleString(
+                "en-US"
+              )}.00</td>
             </tr>          
             `
         )}
         <tr>
-        <td style="padding: 10px">TOTAL</td>
-        <td style="padding: 10px">${totalPrice}</td>
+        <th style="padding: 10px">TOTAL</th>
+        <td style="padding: 10px">&#8358;${totalPrice.toLocaleString(
+          "en-US"
+        )}.00</td>
       </tr> 
         </table> <br>
 
