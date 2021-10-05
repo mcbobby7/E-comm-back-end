@@ -62,12 +62,12 @@ const registerUser = asyncHandler(async (req, res) => {
       },
     });
     let content = `<td style="padding:0 35px;">
-    <h1 style="color:#1e1e2d; font-weight:500; margin:0;font-size:32px;font-family:'Rubik',sans-serif;">You have
-        Welcome to MCBEE online  store</h1>
+    <h1 style="color:#1e1e2d; font-weight:500; margin:0;font-size:32px;font-family:'Rubik',sans-serif;">
+        Welcome ${name}</h1>
     <span
         style="display:inline-block; vertical-align:middle; margin:29px 0 26px; border-bottom:1px solid #cecece; width:100px;"></span>
     <p style="color:#455056; font-size:15px;line-height:24px; margin:0;">
-        Thanks for registering with us, we hope you find what you need. we offer and smooth and seamless purchase, you are always welcome to spend all your money,
+        Thanks for registering with us, we hope you find what you need. we offer smooth and seamless purchase, you are always welcome to spend all your money,
     </p>
     <a href="https://mcbee.herokuapp.com/"
         style="background:#3a8bcd;text-decoration:none !important; font-weight:500; margin-top:35px; color:#fff;text-transform:uppercase; font-size:14px;padding:10px 24px;display:inline-block;border-radius:50px;">Visit
@@ -242,8 +242,7 @@ const forgotPassword = asyncHandler(async (req, res) => {
 
     const token = generateToken(existingEmail._id);
     let content = `<td style="padding:0 35px;">
-    <h1 style="color:#1e1e2d; font-weight:500; margin:0;font-size:32px;font-family:'Rubik',sans-serif;">You have
-        requested to reset your password</h1>
+    <h1 style="color:#1e1e2d; font-weight:500; margin:0;font-size:32px;font-family:'Rubik',sans-serif;">Password Reset</h1>
     <span
         style="display:inline-block; vertical-align:middle; margin:29px 0 26px; border-bottom:1px solid #cecece; width:100px;"></span>
     <p style="color:#455056; font-size:15px;line-height:24px; margin:0;">
@@ -383,7 +382,7 @@ const forgotPasswordTemplate = (content) => {
                         <tr>
                             <td style="text-align:center;">
                               <a style="text-decoration: none" href="http://mcbee.herokuapp.com" title="logo" target="_blank">
-                              <p style="font-size: 40px; font-weight: 600; color: #3A8BCD;">MCBEE</p>
+                              <img src="http://mcbee.herokuapp.com/uploads/logoBlue.png" style="width: 150px" alt="" />
                               </a>
                             </td>
                         </tr>
